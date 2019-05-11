@@ -13,10 +13,12 @@ require('dotenv').config()
 
 // b. Mongo
 mongoose.connect(process.env.DATABASE, { useNewUrlParser: true }, (err) => {
-    if(err) return err
+    if(err){
+        console.log('Conectate a mongo primero')
+        return err
+    } 
     console.log("Conectado a MongoDB")
 })
-
 
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
