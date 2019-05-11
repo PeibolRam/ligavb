@@ -1,0 +1,24 @@
+.main-header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #403273;
+    color: white;
+}
+
+.main-header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-header ul li {
+    margin: 0 15px;
+    padding: 8px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.main-header ul li:hover {
+    color: #F2BE22;
+}

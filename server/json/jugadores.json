@@ -1,0 +1,30 @@
+
+[
+    {
+        "idJugador":"0001",
+        "nombre": "Pablo Antonio Ramirez Vazquez",
+        "edad": "25",
+        "boleta": "2013630362",
+        "idEquipo": "0001",
+        "estatura": "180",
+        "peso": "88"
+    }, 
+    {
+        "idJugador":"0003",
+        "nombre": "Fernando Dereck",
+        "edad": "22",
+        "boleta": "2013630372",
+        "idEquipo": "0001",
+        "estatura": "170",
+        "peso": "70"
+    },
+    {
+        "idJugador":"0002",
+        "nombre": "Cesar Vega",
+        "edad": "28",
+        "boleta": "2010630362",
+        "idEquipo": "0001",
+        "estatura": "150",
+        "peso": "50"
+    }
+]
