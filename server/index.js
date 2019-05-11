@@ -2,7 +2,9 @@
 const express = require("express")
 const mongoose = require("mongoose")
 const cookieParser = require("cookie-parser")
-const jwt = require('jsonwebtoken')
+const cors = require('cors')
+
+
 // 2. "Middlewares"
 // a. Express
 const app = express()
@@ -19,6 +21,7 @@ mongoose.connect(process.env.DATABASE, { useNewUrlParser: true }, (err) => {
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(cookieParser())
+app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
 
 const port = process.env.PORT || 3002
 
