@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum&display=swap');
+
+.home-div {
+	width: 100%;
+	margin: 2em auto;
+	font-family: 'Cuprum', sans-serif;
+}
+.home-div p {
+	width: 80%;
+	margin: 2em auto;
+}
+.home-div img {
+	width: 100%;
+	max-height: 800px;
+	object-fit: cover;
+	margin: 2em 0;
+}
