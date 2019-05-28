@@ -11,9 +11,7 @@ class Home extends Component {
 				<div className="home-div">
 					<h1>Voleibol</h1>
 					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id est ea nulla, numquam dignissimos
-						accusamus fugit rerum natus perferendis ut! Voluptatibus a, incidunt blanditiis reprehenderit
-						pariatur reiciendis fugiat impedit quibusdam.
+						Inicia sesión para dar de alta tu equipo.
 					</p>
 					<img src={wallpaperHome} alt="" />
 				</div>

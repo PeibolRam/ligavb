@@ -22,7 +22,7 @@ class HeaderNav extends Component {
 							</Link>
 						</li>
 						<li>
-							<Link to="/">TABLA</Link>
+							<Link to="/tabla">TABLA</Link>
 						</li>
 						<li>
 							<Link to="/login" component={Login}>

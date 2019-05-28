@@ -1,0 +1,10 @@
+.tabla-div table{
+    width: 90%;
+    margin: 1em auto;
+
+}
+
+.tabla-div table thead{
+    color: #fff;
+    background-color: #072146;
+}
