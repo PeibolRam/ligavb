@@ -17,11 +17,6 @@ class HeaderNav extends Component {
 							</Link>
 						</li>
 						<li>
-							<Link to="/equipos" component={Equipos}>
-								EQUIPOS
-							</Link>
-						</li>
-						<li>
 							<Link to="/tabla">TABLA</Link>
 						</li>
 						<li>

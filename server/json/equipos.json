@@ -1,0 +1,29 @@
+[
+    {
+        "idEquipo":"00001",
+        "nombre":"ESCOM",
+        "idEntrenador":"01",
+        "puntos":"",
+        "posicion":"",
+        "setGanados":"",
+        "setPerdidos":""
+    },
+    {
+        "idEquipo":"00002",
+        "nombre":"ESSCA",
+        "idEntrenador":"02",
+        "puntos":"",
+        "posicion":"",
+        "setGanados":"",
+        "setPerdidos":""
+    },
+    {
+        "idEquipo":"00003",
+        "nombre":"CICS STO TOMAS",
+        "idEntrenador":"03",
+        "puntos":"",
+        "posicion":"",
+        "setGanados":"",
+        "setPerdidos":""
+    }
+]

@@ -4,14 +4,31 @@ const mongoose = require("mongoose")
 // 2. SCHEMA / ESQUEMA
 const equipoSchema = mongoose.Schema({
     idEquipo: {
-        type: String
+        type: String,
+        unique: true
     },
     nombre: {
-        type: String
+        type: String,
+        unique: true
     },
     idEntrenador: {
         type: String
     },
+    puntos: {
+        type: Number
+    },
+    posicion: {
+        type: Number
+    },
+    juegosJugados:{
+        type: Number
+    },
+    setGanados: {
+        type: Number
+    },
+    setPerdidos: {
+        type: Number
+    }
 })
 
 // 3. CREACIÓN DEL MODELO

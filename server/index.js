@@ -8,7 +8,7 @@ const cors = require('cors');
 // a. Express
 const app = express();
 
-require('dotenv').config();
+require('dotenv').config({ path: './env' });
 
 // b. Mongo
 mongoose.connect(process.env.DATABASE, { useNewUrlParser: true }, (err) => {
@@ -170,9 +170,17 @@ app.delete('/jugadores/:idJugador', (req, res) => {
 /**RUTAS EQUIPOS */
 //Ruta de todos los EQUIPOS
 app.get('/equipos', (req, res) => {
-	Equipo.find({}).then((datosDeEquipos) => {
-		res.send(datosDeEquipos);
-	});
+	let order = req.query.order ? req.query.order : 'asc'
+	let sortBy = req.query.sortBy ? req.query.sortBy : 'posicion'
+	
+	Equipo
+    .find()   
+    .sort([[sortBy, order]])
+    .exec((err, equipos) => {
+        if(err) return res.status(400).send(err)
+        res.send(equipos)
+    })
+	
 });
 
 //Ruta de un solo EQUIPO
