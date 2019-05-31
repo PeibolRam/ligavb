@@ -9,7 +9,7 @@ class Tabla extends Component {
     }
 
     async componentDidMount(){
-		const dataFetch = await axios.get(`http://localhost:3002/equipos`).then(response => {
+		await axios.get(`http://localhost:3002/equipos`).then(response => {
 			this.setState({
 			equipos: response.data
 			})
@@ -17,8 +17,8 @@ class Tabla extends Component {
 		.catch(error => {
 			console.log('error');
 		})
-
-    }
+	}
+	
 	render() {
 		return (
 			<div>

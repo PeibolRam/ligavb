@@ -10,7 +10,7 @@ class Equipos extends Component {
     }
 
     async componentDidMount(){
-		const dataFetch = await axios.get(`http://localhost:3002/equipos`).then(response => {
+		await axios.get(`http://localhost:3002/equipos`).then(response => {
 			this.setState({
 			equipos: response.data
 			})

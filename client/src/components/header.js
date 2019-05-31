@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Login from '../pages/login';
+import Register from '../pages/register';
 import { Link } from 'react-router-dom';
 import '../styles/header.css';
-import Equipos from '../pages/equipos';
 import Home from '../pages/home';
 
 class HeaderNav extends Component {
@@ -20,8 +19,8 @@ class HeaderNav extends Component {
 							<Link to="/tabla">TABLA</Link>
 						</li>
 						<li>
-							<Link to="/login" component={Login}>
-								LOGIN
+							<Link to="/register" component={Register}>
+								REGISTRATE
 							</Link>
 						</li>
 					</ul>
